@@ -1,0 +1,43 @@
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  user-select: none;
+}
+
+header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  height: 120px;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 80px;
+  text-align: center;
+  padding: 1rem;
+  min-height: calc(100vh - 80px - 120px);
+}
+
+body {
+  font-size: 12pt;
+}
+
+body {
+  color: #111111;
+}
