@@ -23,6 +23,7 @@
   height: calc(80px / 2);
   width: calc(80px / 2);
   border: none;
+  font-size: 16pt;
 }
 
 #header #top-nav {
@@ -74,6 +75,61 @@
   background-color: #f1f1f1;
   user-select: none;
   height: 120px;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 1em auto;
+}
+
+.stepper .item {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex: 1;
+}
+
+.stepper .item.completed .count {
+  background-color: #0066cc;
+  color: white;
+}
+
+.stepper .item .count {
+  align-items: center;
+  background: #ccc;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  font-size: 14pt;
+  font-weight: bold;
+  height: 36px;
+  justify-content: center;
+  margin-bottom: 6px;
+  position: relative;
+  width: 36px;
+  z-index: 5;
+}
+
+.stepper .item .name {
+  font-size: 10pt;
+}
+
+#demo #project .frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#demo #project .frame span {
+  color: #ccc;
 }
 
 html, body {
