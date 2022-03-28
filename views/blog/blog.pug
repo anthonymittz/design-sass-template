@@ -1,0 +1,27 @@
+extends ../layout.pug 
+
+block content
+  h1 Blog 
+  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea nam corrupti?
+
+  .category-preview 
+    h2 
+      a(href="/blog/design/", class="category") Design
+    ul
+      li 
+        a(href="/blog/design/first-article", class="article") First article
+  
+  .category-preview 
+    h2 
+      a(href="/blog/development/", class="category") Development
+    ul
+      li 
+        a(href="/blog/development/second-article", class="article") Second article
+  
+  .category-preview 
+    h2 
+      a(href="/blog/architecture/", class="category") Architecture
+    ul
+      li 
+        a(href="/blog/architecture/third-article", class="article") Third article
+      

@@ -1,0 +1,15 @@
+extends ../layout.pug 
+
+block content
+  h1 404 | Page not found
+  p 
+  | Do you want to go to a 
+  a(href="/") homepage
+  | ?
+  br
+  | Or just return 
+  script.
+    document.write(
+      '<a href="' + document.referrer + '">to a previous page</a>'
+    );
+  | ?

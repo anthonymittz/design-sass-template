@@ -1,0 +1,9 @@
+doctype html
+html 
+  include components/head.pug
+  body 
+    include components/header.pug
+    main#content
+      block content
+    include components/footer.pug
+    script(src='/script.js') 

@@ -1,0 +1,62 @@
+$header_height: 80px
+$toggle_size: calc(#{$header_height} / 2)
+$toggle_margin: calc(#{$toggle_size} / 2)
+
+#header
+  @include flex_center
+  background-color: $background_color
+  user-select: none
+  height: $header_height
+  position: fixed
+  top: 0
+  width: 100%
+  padding: 0 1rem
+
+  #brand
+    margin: 0 auto
+    font-weight: 700
+
+  #toggle-nav
+    position: absolute
+    top: $toggle_margin
+    left: $toggle_margin
+    height: $toggle_size
+    width: $toggle_size
+    border: none
+
+  #top-nav
+    display: none
+    height: 100%
+
+    a
+      display: flex
+      padding: 0 0.5em
+      height: 100%
+      align-items: center
+
+  #side-nav
+    background-color: $background_color
+    display: none
+    flex-flow: column
+    left: 0
+    position: absolute
+    right: 20vw
+    top: $header_height
+
+    &.visible
+      display: flex
+
+    a
+      padding: 0.75em 1.25em
+
+@media screen and (min-width: 400px)
+  #header
+
+    #brand
+      margin: 0 auto 0 0
+
+    #top-nav
+      display: flex
+
+    #toggle-nav
+      display: none

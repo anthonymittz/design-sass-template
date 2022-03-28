@@ -1,0 +1,17 @@
+extends ../layout.pug 
+
+block content
+  header 
+    nav.breadcrumbs
+      a(href="/blog") < Blog 
+    h1 #{category}
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eum, dolor mollitia fugiat at eos consequuntur?
+    .filter 
+      | Sort:
+      button By date
+      |  / 
+      button By popularity
+  
+  ul
+    li 
+      a(href=`/blog/${slug}/first-article`, class="article") First article
